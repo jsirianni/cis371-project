@@ -1,8 +1,8 @@
 <?php
-include 'query.php'
+
 
 // Get system uptime
-$uptime exec('uptime');
+echo exec('uptime');
 echo "\n";
 
 // Get IP information
