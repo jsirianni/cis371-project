@@ -5,7 +5,7 @@ echo "<div id='status'>";
 echo "<p>System Uptime</p>";
 echo "<a>"
 echo exec('uptime');
-echo "</a>"
+echo "</a>";
 echo "\n<br>";
 
 // Get IP information
