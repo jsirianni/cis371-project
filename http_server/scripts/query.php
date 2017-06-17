@@ -34,11 +34,9 @@ function checkSql($sql) {
   // Return true if result is not false
   if ($result != 'FALSE') {
     echo "true";
-    return 1;
   }
   else {
     echo "false";
-    return 0;
   }
 }
 

@@ -54,7 +54,13 @@ function validateCustomQuery() {
       return false;
     }
     else {
-      return true;
+      if (isValidSql() == true) {
+        return true;
+      }
+      else {
+        alert("SQL Statement is not valid")
+        return false;
+      }
     }
 }
 
@@ -72,4 +78,12 @@ function validateQuickStats() {
     else {
       return true;
     }
+}
+
+
+//
+// Function returns true if sql is valid
+//
+function isValidSql() {
+  return true;
 }
