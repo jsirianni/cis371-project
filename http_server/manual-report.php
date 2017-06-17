@@ -45,6 +45,7 @@
             $currentTime = time();
             // Call manual-report()
             manualReport($currentHostname,$currentStatus,$currentTime);
+            showLast();
           }
         ?>
 
