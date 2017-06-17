@@ -3,13 +3,6 @@
 //
 function showStatus() {
   alert("Before ajax");
-  $.ajax({ url: '/scripts/status.php',
-           data: {action: 'test'},
-           type: 'post',
-           success: function(output) {
-                        alert(output);
-                    }
-  });
   alert("After Ajaxs");
 }
 
