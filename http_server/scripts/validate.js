@@ -2,16 +2,14 @@
 // AJAX Call to status.php
 //
 function showStatus() {
-  document.getElementById("sys").innerHTML = getStatus();
+  getStatus();
 }
 function getStatus() {
   $.ajax({
     url: "scripts/status.php",
     dataType: "html",
     success: function(data){
-      page = document.documentElement.cloneNode();
-      page.innerHTML = data;
-      alert($(page.querySelector('#status')));
+      document.getElementById("sys").innerHTML = data;
 
     }
   });
