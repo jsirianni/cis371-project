@@ -64,6 +64,16 @@ function validateCustomQuery() {
     }
 }
 
+
+//
+// Function returns true if sql is valid
+//
+function isValidSql() {
+    var sql = document.getElementById('custom-query').value
+    alert("Attempted SQL: " + sql)
+    return false;
+}
+
 //
 // Validate quick stats page
 // Requires an integer value greater than 0
@@ -78,12 +88,4 @@ function validateQuickStats() {
     else {
       return true;
     }
-}
-
-
-//
-// Function returns true if sql is valid
-//
-function isValidSql() {
-  return false;
 }
