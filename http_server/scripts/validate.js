@@ -85,5 +85,5 @@ function validateQuickStats() {
 // Function returns true if sql is valid
 //
 function isValidSql() {
-  return true;
+  return false;
 }
