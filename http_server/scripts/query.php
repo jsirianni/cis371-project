@@ -128,6 +128,22 @@ function updateReport($id, $hostname, $status, $timestamp) {
   // Execute INSERT & close
   $result = mysqli_query($sqlconn,$sql);
   $sqlconn->close();
+
+  // Display row
+  echo "<div class='content'>";
+  echo "<br>";
+  echo "<table>";
+  echo "<tr><th>Report ID</th><th>Hostname</th><th>Status</th><th>Timestamp</th></tr>";
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>", $row['id'],"         </td>";
+    echo "<td>", $row['hostname'],"   </td>";
+    echo "<td>", $row['status'],"     </td>";
+    echo "<td>", date('m.d.Y H:i', $row['timestamp'])," </td>";
+    echo "</tr>";
+  }
+  echo "</table>";
+  echo "</div>";
 }
 
 

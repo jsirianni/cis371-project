@@ -48,7 +48,7 @@
             showLast();
           }
         ?>
-
+        <br>
         <h4> Edit Existing Report </h4>
         <form name="updateform" class="report" action="manual-report.php" onsubmit="return validateUpdateReport()">
           ID: <br><input type="text" name="id"><br>
