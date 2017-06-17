@@ -28,7 +28,7 @@
 
     </div>
     <div class="content">
-      <button type="button" disabled>Reload</button> 
+      <button type="button">Reload</button> 
     </div>
     </section>
 </body>
