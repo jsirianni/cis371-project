@@ -19,3 +19,5 @@ if ($result != 'FALSE') {
 else {
   echo "false";
 }
+
+?>
