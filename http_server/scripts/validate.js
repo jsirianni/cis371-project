@@ -1,14 +1,12 @@
 //
 // AJAX Call to status.php
 //
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
 function showStatus() {
-  document.getElementById("sys").innerHTML = "System status = healthy";
-  sleep(10000);
-  document.getElementById("sys").innerHTML = "System status = degraded";
+  document.getElementById("sys").innerHTML = getStatus();
 
+}
+function getStatus() {
+  return "Degraded";
 }
 
 //
