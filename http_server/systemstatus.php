@@ -16,16 +16,14 @@
     <div class="nav">
       <nav>
         <ul>
-            <?php
-              include 'scripts/query.php';
-              printNav();
-             ?>
+          <?php
+            include 'scripts/query.php';
+            printNav();
+           ?>
         </ul>
       </nav>
     </div>
     <div id="sys" class="content">
-
-
     </div>
     <br><br>
     <div class="content">
