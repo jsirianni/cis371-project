@@ -1,5 +1,5 @@
 //
-// AJAX Call to status.php
+// AJAX Call to display the system status
 //
 function showStatus() {
   $.ajax({
