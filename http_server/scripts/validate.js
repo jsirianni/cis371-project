@@ -4,7 +4,7 @@
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-function showStatus() {
+async function showStatus() {
   document.getElementById("sys").innerHTML = "System status = healthy";
   sleep(10000);
   document.getElementById("sys").innerHTML = "System status = degraded";
