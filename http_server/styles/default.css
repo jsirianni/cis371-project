@@ -109,3 +109,8 @@ table th {
     border-radius: 6px;
     border-width: 1px;
 }
+
+
+#statusbutton {
+  width: 100px;
+}
