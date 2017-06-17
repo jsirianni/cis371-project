@@ -7,8 +7,8 @@ function showStatus() {
 function getStatus() {
   $.ajax({
     url: "scripts/status.php",
-    context: document.body,
-    success: function(){
+    dataType: "html",
+    success: function(){ 
       alert("AJAX WORKED");
     }
   });
