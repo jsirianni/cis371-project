@@ -112,9 +112,6 @@ table th {
 
 
 /* Style Status page */
-#sys {
-  border-bottom: solid;
-}
 #statusbutton {
   width: 200px;
   font-size: 2em;
