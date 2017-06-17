@@ -9,6 +9,7 @@ function showStatus() {
                         alert(output);
                     }
   });
+  alert("Function is running");
 }
 
 
