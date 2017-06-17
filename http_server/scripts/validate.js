@@ -3,9 +3,15 @@
 //
 function showStatus() {
   document.getElementById("sys").innerHTML = getStatus();
-
 }
 function getStatus() {
+  $.ajax({
+    url: "scripts/status.php",
+    context: document.body,
+    success: function(){
+      $(this).addClass("done");
+    }
+  });
   return "Degraded";
 }
 
