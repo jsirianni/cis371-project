@@ -33,7 +33,7 @@
       <form name="form" class="report" action="custom-query.php">
         <p>Custom Query<p>
         <input type="text" name="custom-query">
-        <input type="button" value="Submit" onclick="validateCustomQuery()">
+        <input type="submit" value="Submit" onclick="validateCustomQuery()">
       </form>
       <br>
       <?php
