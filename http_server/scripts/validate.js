@@ -1,9 +1,9 @@
 //
 // AJAX Call to status.php
 //
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+//function sleep(ms) {
+//  return new Promise(resolve => setTimeout(resolve, ms));
+//}
 async function showStatus() {
   document.getElementById("sys").innerHTML = "System status = healthy";
   //await sleep(2000);
