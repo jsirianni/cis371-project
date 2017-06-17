@@ -24,21 +24,21 @@ function manualReport($hostname, $status, $timestamp) {
 //
 // Function returns true if sql is valid
 //
-function checkSql($sql) {
-  $sqlconn = dbConnect();
-
+//function checkSql($sql) {
+//  $sqlconn = dbConnect();
+//
   // Execute query
-  $result = mysqli_query($sqlconn,$sql);
-  $sqlconn->close();
-
+//  $result = mysqli_query($sqlconn,$sql);
+//  $sqlconn->close();
+//
   // Return true if result is not false
-  if ($result != 'FALSE') {
-    echo "true";
-  }
-  else {
-    echo "false";
-  }
-}
+//  if ($result != 'FALSE') {
+//    echo "true";
+//  }
+//  else {
+//    echo "false";
+//  }
+//}
 
 
 //
