@@ -2,19 +2,15 @@
 // AJAX Call to status.php
 //
 function showStatus() {
-  getStatus();
-}
-function getStatus() {
   $.ajax({
     url: "scripts/status.php",
     dataType: "html",
     success: function(data){
       document.getElementById("sys").innerHTML = data;
-
     }
   });
-  return "Degraded";
 }
+
 
 //
 // Validate manual report page
