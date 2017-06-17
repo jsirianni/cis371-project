@@ -28,7 +28,7 @@
 
     </div>
     <div class="content">
-      <button type="button">Reload</button> 
+      <button type="button" onclick="showStatus()">Reload</button> 
     </div>
     </section>
 </body>
