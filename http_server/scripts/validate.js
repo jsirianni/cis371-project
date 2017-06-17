@@ -69,8 +69,19 @@ function validateCustomQuery() {
 // Function returns true if sql is valid
 //
 function isValidSql() {
+    // Get sql statement from form
     var sql = document.getElementById('custom-query').value
-    alert("Attempted SQL: " + sql)
+
+    $.ajax({
+      type: "GET",
+      url: "/scripts/query.php",
+      data: sql,
+      success: function(response){
+        console.log(response.blablabla);
+        // put on console what server sent back...
+      }
+    });
+
     return false;
 }
 
