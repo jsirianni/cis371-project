@@ -1,6 +1,6 @@
 <?php
-
 echo "<div id='status'>";
+
 // Get system uptime
 echo "<h4>System Uptime</h4>";
 echo exec('uptime');
@@ -25,5 +25,4 @@ echo "<h4>Disk Usage</h4>";
 echo exec('df -h | grep /dev/sda1');
 
 echo "</div>";
-
 ?>

@@ -27,6 +27,9 @@
 
 
     </div>
+    <div class="content">
+      <button type="button" disabled>Reload</button> 
+    </div>
     </section>
 </body>
 </html>
