@@ -9,7 +9,8 @@ function getStatus() {
     url: "scripts/status.php",
     dataType: "html",
     success: function(data){
-      return $('#status').html($(data).find('#status').html());
+      var x = $('#status').html($(data).find('#status').html());
+      alert(x);
     }
   });
   return "Degraded";
