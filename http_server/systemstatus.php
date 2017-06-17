@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Report Server</title>
 </head>
-<body>
+<body onload="showStatus()">
   <section>
     <div id=header>
         <h1>Server Status</h1>
@@ -22,7 +22,7 @@
         </ul>
       </nav>
     </div>
-    <div class="content" onload="return showStatus()">
+    <div class="content">
     </div>
     </section>
 </body>
