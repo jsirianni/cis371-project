@@ -27,8 +27,9 @@
 
 
     </div>
+    <br><br>
     <div class="content">
-      <button type="button" onclick="showStatus()">Reload</button> 
+      <button id="statusbutton" type="button" onclick="showStatus()">Reload</button>
     </div>
     </section>
 </body>
