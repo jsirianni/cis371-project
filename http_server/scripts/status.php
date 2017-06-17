@@ -3,7 +3,7 @@
 echo "<div id='status'>";
 // Get system uptime
 echo "<p>System Uptime</p>";
-echo "<a>"
+echo "<a>";
 echo exec('uptime');
 echo "</a>";
 echo "\n<br>";
