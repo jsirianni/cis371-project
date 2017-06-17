@@ -1,16 +1,15 @@
 //
 // AJAX Call to status.php
 //
-function showStatus() {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function showStatus() {
   while (true) {
     document.getElementById("sys").innerHTML = "System status = healthy";
     await sleep(2000);
     document.getElementById("sys").innerHTML = "System status = degraded";
   }
-
-}
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 //
