@@ -2,6 +2,7 @@
 // AJAX Call to status.php
 //
 function showStatus() {
+  alert("Before ajax");
   $.ajax({ url: '/scripts/status.php',
            data: {action: 'test'},
            type: 'post',
@@ -9,7 +10,7 @@ function showStatus() {
                         alert(output);
                     }
   });
-  alert("Function is running");
+  alert("After Ajaxs");
 }
 
 
