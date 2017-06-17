@@ -6,7 +6,7 @@ function sleep(ms) {
 }
 function showStatus() {
   document.getElementById("sys").innerHTML = "System status = healthy";
-  sleep(2000);
+  sleep(10000);
   document.getElementById("sys").innerHTML = "System status = degraded";
 
 }
