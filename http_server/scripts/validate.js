@@ -2,10 +2,16 @@
 // AJAX Call to status.php
 //
 function showStatus() {
-  document.getElementById("sys").innerHTML = "System status";
+  while (true) {
+    document.getElementById("sys").innerHTML = "System status = healthy";
+    await sleep(2000);
+    document.getElementById("sys").innerHTML = "System status = degraded";
+  }
 
 }
-
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 //
 // Validate manual report page
