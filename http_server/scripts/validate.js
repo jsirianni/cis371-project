@@ -9,8 +9,9 @@ function getStatus() {
     url: "scripts/status.php",
     dataType: "html",
     success: function(data){
-      var x = $('#status').html($(data).find('#status').html());
-      alert(x);
+      page = document.documentElement.cloneNode();
+      doc.innerHTML = data;
+      $status = $(doc.querySelector('#status'))
     }
   });
   return "Degraded";
