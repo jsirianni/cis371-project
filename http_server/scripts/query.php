@@ -22,6 +22,26 @@ function manualReport($hostname, $status, $timestamp) {
 
 
 //
+// Function returns true if sql is valid
+//
+function checkSql($sql) {
+  $sqlconn = dbConnect();
+
+  // Execute query
+  $result = mysqli_query()
+  $sqlconn->close();
+
+  // Return true if result is not false
+  if ($result != 'FALSE') {
+    echo "true";
+  }
+  else {
+    echo "false";
+  }
+}
+
+
+//
 // Function prints the nav list
 //
 function printNav() {
