@@ -2,8 +2,8 @@
 // AJAX Call to status.php
 //
 function showStatus() {
-  alert("Before ajax");
-  alert("After Ajaxs");
+  document.getElementById("sys").innerHTML = "System status";
+
 }
 
 
