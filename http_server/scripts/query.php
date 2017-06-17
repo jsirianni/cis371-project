@@ -126,7 +126,7 @@ function updateReport($id, $hostname, $status, $timestamp) {
   $sql = "UPDATE reports SET hostname=$hostname, status=$status, timestamp=$timestamp WHERE id=$id";
   $result = mysqli_query($sqlconn,$sql);
 
-  $sql = "SELECT * FROM report WHERE (id=$id)";
+  $sql = "SELECT * FROM reports WHERE id=$id";
   $result = mysqli_query($sqlconn,$sql);
 
   $sqlconn->close();
