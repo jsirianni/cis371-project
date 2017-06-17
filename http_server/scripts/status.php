@@ -7,7 +7,9 @@ echo exec('uptime');
 echo "\n<br>";
 
 // Get IP information
-//system("ip addr show | grep 'global eth0'");
+echo "<p>System IP</p>";
+echo exec('ip addr show | grep "global eth0"');
+echo "\n<br>";
 
 // Get service information
 echo "<p>MySQL Status</p>";
