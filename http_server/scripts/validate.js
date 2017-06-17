@@ -1,4 +1,19 @@
 //
+// AJAX Call to status.php
+//
+function showStatus() {
+  $.ajax({ url: '/scripts/status.php',
+           data: {action: 'test'},
+           type: 'post',
+           success: function(output) {
+                        alert(output);
+                    }
+  });
+}
+
+
+
+//
 // Validate manual report page
 // Requires a Hostname
 // Resuires status to be either 'ok' or 'bad'

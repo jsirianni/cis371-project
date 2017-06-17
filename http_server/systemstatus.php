@@ -22,8 +22,7 @@
         </ul>
       </nav>
     </div>
-    <div class="content">
-
+    <div class="content" onload="showStatus()">
     </div>
     </section>
 </body>
