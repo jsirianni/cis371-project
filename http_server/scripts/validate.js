@@ -12,7 +12,6 @@ function validateManualReport() {
       return false;
     }
     else {
-      alert("The report has been submitted.")
       return true;
     }
 }
@@ -33,7 +32,6 @@ function validateUpdateReport() {
       return false;
     }
     else {
-      alert("The report has been updated.")
       return true;
     }
 }
