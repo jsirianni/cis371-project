@@ -56,7 +56,7 @@ function showLast() {
   // Display row
   echo "<div class='content'>";
   echo "<br>";
-  echo "<p>Report submitted</p>"
+  echo "<p>Report submitted</p>";
   echo "<table>";
   echo "<tr><th>Report ID</th><th>Hostname</th><th>Status</th><th>Timestamp</th></tr>";
   while ($row = mysqli_fetch_assoc($result)) {
@@ -136,7 +136,7 @@ function updateReport($id, $hostname, $status, $timestamp) {
   // Display row
   echo "<div class='content'>";
   echo "<br>";
-  echo "<p>Report submitted</p>"
+  echo "<p>Report submitted</p>";
   echo "<table>";
   echo "<tr><th>Report ID</th><th>Hostname</th><th>Status</th><th>Timestamp</th></tr>";
   while ($row = mysqli_fetch_assoc($result)) {
