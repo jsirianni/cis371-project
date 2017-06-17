@@ -74,7 +74,7 @@ function isValidSql() {
 
     $.ajax({
       type: "GET",
-      url: "/scripts/query.php",
+      url: "/scripts/checksql.php",
       data: sql,
       success: function(response){
         console.log(response.blablabla);

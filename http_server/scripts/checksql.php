@@ -40,7 +40,7 @@ function check($sql) {
 //  }
 //}
 
-$query = $_GET['call'];
+$query = $_GET['sql'];
 check("SELECT * FROM report.reports");
 
  ?>
