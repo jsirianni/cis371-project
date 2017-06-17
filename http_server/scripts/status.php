@@ -2,28 +2,26 @@
 
 echo "<div id='status'>";
 // Get system uptime
-echo "<p>System Uptime</p>";
-echo "<a>";
+echo "<h4>System Uptime</h4>";
 echo exec('uptime');
-echo "</a>";
 echo "\n<br>";
 
 // Get IP information
-echo "<p>System IP</p>";
+echo "<h4>System IP</h4>";
 echo exec('ip addr show | grep "global eth0"');
 echo "\n<br>";
 
 // Get service information
-echo "<p>MySQL Status</p>";
+echo "<h4>MySQL Status</h4>";
 echo exec('systemctl status mysql | grep Active');
 echo "\n<br>";
 
-echo "<p>Apache Status</p>";
+echo "<h4>Apache Status</h4>";
 echo exec('systemctl status apache2 | grep Active');
 echo "\n<br>";
 
 // Get disk information
-echo "<p>Disk Usage</p>";
+echo "<h4>Disk Usage</h4>";
 echo exec('df -h | grep /dev/sda1');
 
 echo "</div>";
