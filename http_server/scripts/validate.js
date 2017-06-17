@@ -9,8 +9,7 @@ function getStatus() {
     url: "scripts/status.php",
     dataType: "html",
     success: function(data){
-      $('#status').html($(data).find('#status').html());
-      alert("AJAX WORKED");
+      return $('#status').html($(data).find('#status').html());
     }
   });
   return "Degraded";
