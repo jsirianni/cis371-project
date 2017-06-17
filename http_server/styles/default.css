@@ -1,0 +1,112 @@
+
+/* Global Background */
+body {
+  background-color: #222930;
+}
+
+
+/* Align nav and content divs */
+section {
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 80%;
+}
+h1 {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.nav {
+  margin-top: 1em;
+  width: 600px;
+  float: left;
+  margin-right: 10px;
+}
+.content {
+  clear: both;
+  margin-left: 20px;
+  max-width: 850px;
+}
+
+/* Manual report specific styling */
+.report {
+  clear: both;
+  font-size: 20px;
+  margin-left: 20px;
+  max-width: 850px;
+}
+.report input {
+  width: 60%;
+}
+
+/* Home page specific styling */
+.about {
+  clear: both;
+  max-width: 750px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.logical img {
+  max-width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Nav Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+  float: left;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #4EB1BA;
+    color: white;
+}
+
+
+/* Output table styling */
+table {
+  background-color: #4EB1BA;
+  margin-top: 10px;
+}
+th {
+  min-width: 190px;
+  text-align: left;
+}
+
+
+/* Set font type */
+h1, div, nav ul a {
+  font-family: Sans-serif;
+  color: #E9E9E9;
+}
+table th {
+  color: #3c3c42;
+}
+
+
+/* border styles */
+.about, table {
+    border: solid;
+    border-radius: 6px;
+    border-width: 1px;
+}
+
+ 
