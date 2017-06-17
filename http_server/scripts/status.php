@@ -2,7 +2,7 @@
 include 'query.php'
 
 // Get system uptime
-shell_exec("uptime");
+shell_exec('uptime');
 
 // Get IP information
 shell_exec("ip addr show | grep 'global eth0'");
