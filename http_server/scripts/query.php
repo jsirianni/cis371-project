@@ -51,6 +51,7 @@ function printNav() {
   echo '<li><a href="quick-stats.php">Quick Stats</a></li>';
   echo '<li><a href="custom-query.php">Custom Query</a></li>';
   echo '<li><a href="manual-report.php">Manual Report</a></li>';
+  echo '<li><a href="systemstatus.php">System</a></li>';  
 }
 
 
