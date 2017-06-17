@@ -11,7 +11,8 @@ function getStatus() {
     success: function(data){
       page = document.documentElement.cloneNode();
       page.innerHTML = data;
-      $status = $(page.querySelector('#status'))
+      alert($(page.querySelector('#status')));
+
     }
   });
   return "Degraded";
