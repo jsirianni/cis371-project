@@ -5,11 +5,10 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 async function showStatus() {
-  while (true) {
-    document.getElementById("sys").innerHTML = "System status = healthy";
-    await sleep(2000);
-    document.getElementById("sys").innerHTML = "System status = degraded";
-  }
+  document.getElementById("sys").innerHTML = "System status = healthy";
+  await sleep(2000);
+  document.getElementById("sys").innerHTML = "System status = degraded";
+  
 }
 
 //
