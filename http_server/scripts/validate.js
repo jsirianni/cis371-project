@@ -10,7 +10,7 @@ function getStatus() {
     dataType: "html",
     success: function(data){
       page = document.documentElement.cloneNode();
-      doc.innerHTML = data;
+      page.innerHTML = data;
       $status = $(doc.querySelector('#status'))
     }
   });
