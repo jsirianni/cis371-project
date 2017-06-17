@@ -8,7 +8,8 @@ function getStatus() {
   $.ajax({
     url: "scripts/status.php",
     dataType: "html",
-    success: function(){ 
+    success: function(data){
+      $('<p>').html($(data).find('<p>').html());
       alert("AJAX WORKED");
     }
   });
