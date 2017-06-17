@@ -10,10 +10,12 @@ echo "\n<br>";
 
 // Get service information
 echo exec('systemctl status mysql | grep Active');
-//system("systemctl status apache2 | grep Active");
+echo "\n<br>";
+echo exec('systemctl status apache2 | grep Active');
 
 // Get disk information
-//system("df -h | grep /dev/sda1");
+echo "\n<br>";
+echo exec('df -h | grep /dev/sda1');
 
 
 
