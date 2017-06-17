@@ -32,7 +32,7 @@ function dbStatus(); {
   $result = mysqli_query($sqlconn,$sql);
   $sqlconn->close();
 
-  echo "$result";
+  //echo "$result";
 }
 
 
