@@ -2,7 +2,7 @@
 include 'query.php'
 
 // Get system uptime
-echo exec('uptime');
+$uptime exec('uptime');
 echo "\n";
 
 // Get IP information
