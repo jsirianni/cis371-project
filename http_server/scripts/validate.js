@@ -38,56 +38,6 @@ function validateUpdateReport() {
 
 
 //
-// Validate custom query page
-// Reuires a SELECT statement
-//
-function validateCustomQuery() {
-    var x = document.forms["form"]["custom-query"].value;
-    x = x.toLowerCase();
-
-    if (x == "") {
-        alert("Error, query is blank.");
-        return false;
-    }
-    else if (x.includes("select") == false) {
-      alert("You must use a SELECT statement");
-      return false;
-    }
-    else {
-      if (isValidSql() == true) {
-        return true;
-      }
-      else {
-        alert("SQL Statement is not valid")
-        return false;
-      }
-    }
-}
-
-
-//
-// Function returns true if sql is valid
-//
-function isValidSql() {
-    // Get sql statement from form
-    var sql = document.getElementById('custom-query').value
-
-    $.ajax({
-      type: "GET",
-      url: "/scripts/checksql.php",
-      data: sql,
-      dataType: "text",
-      success: function(response){
-        console.log(response.blablabla);
-        // put on console what server sent back...
-      }
-    });
-
-    // Unfinished - Always return true
-    return true;
-}
-
-//
 // Validate quick stats page
 // Requires an integer value greater than 0
 //
