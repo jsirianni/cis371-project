@@ -9,7 +9,7 @@ function getStatus() {
     url: "scripts/status.php",
     context: document.body,
     success: function(){
-      $(this).addClass("done");
+      alert("AJAX WORKED");
     }
   });
   return "Degraded";
