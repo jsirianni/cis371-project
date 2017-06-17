@@ -28,7 +28,7 @@ function checkSql($sql) {
   $sqlconn = dbConnect();
 
   // Execute query
-  $result = mysqli_query()
+  $result = mysqli_query();
   $sqlconn->close();
 
   // Return true if result is not false
