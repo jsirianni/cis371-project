@@ -8,11 +8,11 @@ function validateManualReport() {
     var y = document.forms["form"]["status"].value;
 
     if (x == "" || y == "") {
-        alert("Hostname and status are required");
-        return false;
+      alert("Hostname and status are required");
+      return false;
     }
+    else {
       alert("The report has been submitted.")
-    else { 
       return true;
     }
 }
@@ -29,8 +29,8 @@ function validateUpdateReport() {
     var y = document.forms["updateform"]["updatestatus"].value;
 
     if (i == "" || x == "" || y == "") {
-        alert("Id, Hostname, and status are required");
-        return false;
+      alert("Id, Hostname, and status are required");
+      return false;
     }
     else {
       alert("The report has been updated.")
