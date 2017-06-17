@@ -83,6 +83,7 @@ function isValidSql() {
       }
     });
 
+    // Unfinished - Always return true
     return true;
 }
 

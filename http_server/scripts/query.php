@@ -22,6 +22,21 @@ function manualReport($hostname, $status, $timestamp) {
 
 
 //
+// Function returns mysql status
+//
+function dbStatus(); {
+  $sqlconn = dbConnect();
+  $sql = "status";
+
+  // Get the status and close;
+  $result = mysqli_query($sqlconn,$sql);
+  $sqlconn->close();
+
+  echo "$result";
+}
+
+
+//
 // Function returns true if sql is valid
 //
 //function checkSql($sql) {
