@@ -76,13 +76,14 @@ function isValidSql() {
       type: "GET",
       url: "/scripts/checksql.php",
       data: sql,
+      dataType: "text",
       success: function(response){
         console.log(response.blablabla);
         // put on console what server sent back...
       }
     });
 
-    return false;
+    return true;
 }
 
 //
