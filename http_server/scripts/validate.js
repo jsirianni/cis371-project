@@ -13,7 +13,6 @@ function showStatus() {
 }
 
 
-
 //
 // Validate manual report page
 // Requires a Hostname
