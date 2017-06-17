@@ -55,6 +55,7 @@ function showLast() {
 
   // Display row
   echo "<div class='content'>";
+  echo "<br>"
   echo "<table>";
   echo "<tr><th>Report ID</th><th>Hostname</th><th>Status</th><th>Timestamp</th></tr>";
   while ($row = mysqli_fetch_assoc($result)) {
