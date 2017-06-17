@@ -11,13 +11,9 @@ function validateManualReport() {
         alert("Hostname and status are required");
         return false;
     }
-    else if (y == "ok" || y == "bad") {
       alert("The report has been submitted.")
+    else { 
       return true;
-    }
-    else {
-      alert("The status must be either 'ok' or 'bad'.")
-      return false;
     }
 }
 
@@ -36,13 +32,9 @@ function validateUpdateReport() {
         alert("Id, Hostname, and status are required");
         return false;
     }
-    else if (y == "ok" || y == "bad") {
+    else {
       alert("The report has been updated.")
       return true;
-    }
-    else {
-      alert("The status must be either 'ok' or 'bad'.")
-      return false;
     }
 }
 
