@@ -3,7 +3,7 @@
 
 // Get system uptime
 echo exec('uptime');
-echo "\n";
+echo "\n<br>";
 
 // Get IP information
 //system("ip addr show | grep 'global eth0'");
