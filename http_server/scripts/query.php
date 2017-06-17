@@ -115,7 +115,7 @@ function manualReport($hostname, $status, $timestamp) {
 
 
 //
-// Function allows user to perform an INSERT
+// Function allows user to perform an UPDATE
 //
 function updateReport($id, $hostname, $status, $timestamp) {
   // Set vars & connect to the db
@@ -123,11 +123,14 @@ function updateReport($id, $hostname, $status, $timestamp) {
   $sqlconn =  mysqli_connect($GLOBALS['dbhost'], $GLOBALS['ddbuser'], $GLOBALS['dbuserpass'], $GLOBALS['dbname']);
 
   // Build INSERT statement
-  $sql = "UPDATE report.reports SET hostname=$hostname, status=$status, timestamp=$timestamp WHERE id=$id";
-
-  // Execute INSERT & close
+  $sql = "UPDATE reports SET hostname=$hostname, status=$status, timestamp=$timestamp WHERE id=$id";
   $result = mysqli_query($sqlconn,$sql);
+
+  $sql = "SELECT * FROM report WHERE (id=$id)";
+  $result = mysqli_query($sqlconn,$sql);
+
   $sqlconn->close();
+
 
   // Display row
   echo "<div class='content'>";
