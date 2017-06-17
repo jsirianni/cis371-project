@@ -9,7 +9,7 @@ function getStatus() {
     url: "scripts/status.php",
     dataType: "html",
     success: function(data){
-      $('<p>').html($(data).find('<p>').html());
+      $('#status').html($(data).find('#status').html());
       alert("AJAX WORKED");
     }
   });
