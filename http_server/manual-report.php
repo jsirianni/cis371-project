@@ -25,8 +25,6 @@
     <div class="report">
         <p>
           Use this page to submit a manual report. Provide a hostname and a status.
-          A status of "ok" means the server is in a healthy state. Anything else
-          should be a negative / degraded state.
         </p>
         <h4> New Report </h4>
         <form name="form" class="report" action="manual-report.php" onsubmit="return validateManualReport()">
