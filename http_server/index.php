@@ -27,17 +27,17 @@
         <p>
           Welcome to the Report Server. Reports are being gathered in real time
           by a service listening on TCP port 8090. The service is written in GO
-          Language and is capable of handling over over 60,000 requests in under
+          Language and is capable of handling over 60,000 requests in under
           five seconds when running on fast hardware.
         </p>
         </p>
           Each report contains the following
         </p>
         <ul>
-            <li>Report Id: Identification number, incremented by one for each report</li>
-            <li>Hostname: The server hostname of the report's origin</li>
-            <li>Status: The status of the sending server</li>
-            <li>Timestamp: Unix timestamp converted to a human readable format</li>
+            <li>Report Id: Identification number, incremented by one for each report.</li>
+            <li>Hostname: The hostname of the sending server.</li>
+            <li>Status: The status of the sending server.</li>
+            <li>Timestamp: Unix timestamp converted to a human readable format.</li>
         </ul>
         <p>
             Use the <a href="quick-stats.php">Quick Stats</a> page to view recent reports.
