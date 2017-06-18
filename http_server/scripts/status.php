@@ -26,7 +26,7 @@ echo "\n<br>";
 
 // Get disk information
 echo "<h4>Disk Usage</h4>";
-echo exec('df -h | grep /dev/sda1');
+echo "Process: " . exec('df -h | grep /dev/sda1');
 echo "\n<br>";
 
 echo "</div>";
