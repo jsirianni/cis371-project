@@ -24,7 +24,9 @@
     </div>
     <div class="report">
         <p>
-          Use this page to submit a manual report. Provide a hostname and a status.
+          Use this page to submit a manual report or update an existing report.
+          Provide a hostname and a status. Updated reports are given a new
+          timestamp but retain their original Id.
         </p>
         <h4> New Report </h4>
         <form name="form" class="report" action="manual-report.php" onsubmit="return validateManualReport()">
@@ -46,7 +48,7 @@
           }
         ?>
         <br>
-        <h4> Edit Existing Report </h4>
+        <h4> Update Existing Report </h4>
         <form name="updateform" class="report" action="manual-report.php" onsubmit="return validateUpdateReport()">
           ID: <br><input type="text" name="id"><br>
           Hostname: <br><input type="text" name="updatehostname"><br>
