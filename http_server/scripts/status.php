@@ -20,6 +20,10 @@ echo "<h4>Apache Status</h4>";
 echo exec('systemctl status apache2 | grep Active');
 echo "\n<br>";
 
+echo "<h4>Gateway Status</h4>";
+echo exec('ps | grep ReportServer');
+echo "\n<br>";
+
 // Get disk information
 echo "<h4>Disk Usage</h4>";
 echo exec('df -h | grep /dev/sda1');
