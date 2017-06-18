@@ -21,7 +21,7 @@ echo exec('systemctl status apache2 | grep Active');
 echo "\n<br>";
 
 echo "<h4>Gateway Status</h4>";
-echo exec('ps | grep Report');
+echo exec('ps -a | grep Report');
 echo "\n<br>";
 
 // Get disk information
