@@ -1,6 +1,5 @@
-//
+
 // AJAX Call to display the system status
-//
 function showStatus() {
   $.ajax({
     url: "scripts/status.php",
@@ -12,11 +11,10 @@ function showStatus() {
 }
 
 
-//
+
 // Validate manual report page
 // Requires a Hostname
 // Resuires status to be either 'ok' or 'bad'
-//
 function validateManualReport() {
     var x = document.forms["form"]["hostname"].value;
     var y = document.forms["form"]["status"].value;
@@ -31,11 +29,10 @@ function validateManualReport() {
 }
 
 
-//
+
 // Validate manual report page
 // Requires a Hostname
 // Resuires status to be either 'ok' or 'bad'
-//
 function validateUpdateReport() {
     var i = document.forms["updateform"]["id"].value;
     var x = document.forms["updateform"]["updatehostname"].value;
@@ -51,10 +48,8 @@ function validateUpdateReport() {
 }
 
 
-//
 // Validate custom query page
 // Reuires a SELECT statement
-//
 function validateCustomQuery() {
     var x = document.forms["form"]["custom-query"].value;
     x = x.toLowerCase();
@@ -73,10 +68,9 @@ function validateCustomQuery() {
 }
 
 
-//
+
 // Validate quick stats page
 // Requires an integer value greater than 0
-//
 function validateQuickStats() {
     var x = document.forms["form"]["numrecords"].value;
 
