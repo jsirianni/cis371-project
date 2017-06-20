@@ -4,6 +4,7 @@
 //
 function dbConnect() {
   $c =  mysqli_connect('localhost', 'reportuser', 'password', 'report');
+  date_default_timezone_set('America/Detroit');
   return $c;
 }
 
