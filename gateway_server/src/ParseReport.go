@@ -19,10 +19,10 @@ func statusCheck(h string, s string, t string) {
     m.SetBody("text/text", "alert")
 
     // Send alert
-    //d := gomail.NewDialer("smtp.gmail.com", 587, "alerts.team.it@gmail.com", "")
-    //if err := d.DialAndSend(m); err != nil {
-    //  checkError(err)
-    //}
+    d := gomail.NewDialer("smtp.gmail.com", 587, "alerts.team.it@gmail.com", "")
+    if err := d.DialAndSend(m); err != nil {
+      checkError(err)
+    }
   }
 
 }
